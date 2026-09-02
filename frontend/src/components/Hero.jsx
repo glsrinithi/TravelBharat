@@ -1,4 +1,4 @@
-import heroImage from "../assets/hero.jpg";
+import heroImage from "../assets/Hero.jpg";
 function Hero() {
   return (
     <section
