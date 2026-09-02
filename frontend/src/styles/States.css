@@ -1,0 +1,132 @@
+.states-page {
+  min-height: 100vh;
+  padding: 60px 70px;
+  background: #f5f7fb;
+}
+
+.states-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.states-header h1 {
+  font-size: 48px;
+  color: #0b5ed7;
+  margin: 0 0 15px;
+}
+
+.states-header p {
+  font-size: 20px;
+  color: #555;
+  margin: 0;
+}
+
+.states-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.state-item {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.state-item:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.state-image {
+  width: 100%;
+  height: 230px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.state-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.state-content h2 {
+  color: #0b5ed7;
+  font-size: 28px;
+  margin: 0 0 15px;
+}
+
+.state-content p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.6;
+
+  margin: 0 0 25px;
+}
+
+.state-content button {
+  background: #ff6b35;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 12px 28px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.state-content button:hover {
+  background: #e85a2c;
+}
+
+.loading {
+  text-align: center;
+  font-size: 20px;
+  color: #555;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .states-page {
+    padding: 50px 30px;
+  }
+
+  .states-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .states-page {
+    padding: 40px 20px;
+  }
+
+  .states-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .states-header h1 {
+    font-size: 36px;
+  }
+}

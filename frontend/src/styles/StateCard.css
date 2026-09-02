@@ -1,0 +1,61 @@
+.state-card {
+  width: 320px;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.state-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.state-card img {
+  width: 100%;
+  height: 230px;
+  display: block;
+  object-fit: cover;
+}
+
+.state-card-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.state-card h3 {
+  color: #0b5ed7;
+  font-size: 28px;
+  margin: 0 0 15px;
+}
+
+.state-card p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0 0 25px;
+}
+
+.state-card button {
+  background: #ff6b35;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 12px 28px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.state-card button:hover {
+  background: #e85a2c;
+}
