@@ -343,10 +343,12 @@ app.get("/api/messages", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+// ===============================
+// START SERVER
+// ===============================
 
+app.listen(PORT, "0.0.0.0", () => {
   console.log(
-    `TravelBharat server running on http://localhost:${PORT}`
+    `TravelBharat server running on port ${PORT}`
   );
-
 });
