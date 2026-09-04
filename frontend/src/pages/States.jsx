@@ -27,7 +27,7 @@ function States() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/states")
+    fetch("https://travelbharat-cznx.onrender.com/api/states")
       .then((response) => response.json())
       .then((data) => {
         setStates(data);

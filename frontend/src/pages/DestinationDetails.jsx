@@ -12,7 +12,7 @@ function DestinationDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/destinations/${id}`)
+    fetch(`https://travelbharat-cznx.onrender.com/api/destinations/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Destination not found");

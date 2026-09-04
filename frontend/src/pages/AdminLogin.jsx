@@ -17,7 +17,7 @@ function AdminLogin() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/login",
+        "https://travelbharat-cznx.onrender.com/api/admin/login",
         {
           method: "POST",
           headers: {

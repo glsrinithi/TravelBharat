@@ -32,7 +32,7 @@ function Dashboard() {
     return;
   }
 
-  fetch("http://localhost:5000/api/messages")
+  fetch("https://travelbharat-cznx.onrender.com/api/messages")
     .then((response) => response.json())
     .then((data) => {
       setMessages(data);
@@ -53,7 +53,7 @@ function Dashboard() {
   const fetchDestinations = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/destinations"
+        "https://travelbharat-cznx.onrender.com/api/destinations"
       );
 
       const data = await response.json();
@@ -88,7 +88,7 @@ function Dashboard() {
       if (editingId) {
 
         const response = await fetch(
-          `http://localhost:5000/api/destinations/${editingId}`,
+          `https://travelbharat-cznx.onrender.com/api/destinations/${editingId}`,
           {
             method: "PUT",
 
@@ -124,7 +124,7 @@ function Dashboard() {
       else {
 
         const response = await fetch(
-          "http://localhost:5000/api/destinations",
+          "https://travelbharat-cznx.onrender.com/api/destinations",
           {
             method: "POST",
 
@@ -206,7 +206,7 @@ function Dashboard() {
     try {
 
       const response = await fetch(
-        `http://localhost:5000/api/destinations/${id}`,
+        `https://travelbharat-cznx.onrender.com/api/destinations/${id}`,
         {
           method: "DELETE"
         }

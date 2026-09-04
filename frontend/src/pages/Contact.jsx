@@ -25,7 +25,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/messages",
+        "https://travelbharat-cznx.onrender.com/api/messages",
         {
           method: "POST",
           headers: {

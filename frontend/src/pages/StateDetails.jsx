@@ -72,7 +72,7 @@ function StateDetails() {
       return;
     }
 
-    fetch("http://localhost:5000/api/destinations")
+    fetch("https://travelbharat-cznx.onrender.com/api/destinations")
       .then((response) => response.json())
       .then((data) => {
 
